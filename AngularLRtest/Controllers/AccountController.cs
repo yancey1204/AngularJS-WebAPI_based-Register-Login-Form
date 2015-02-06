@@ -24,7 +24,7 @@ namespace AngularLRtest.Controllers
         public string login()
         {
             string roll = HttpContext.Current.Request.Cookies["userEmail"].Value;
-            return "Hello "+ roll;
+            return "Hello "+ roll + ". \n You've already logged in";
         }
 
         [Route("register")]

@@ -12,7 +12,7 @@
 <body data-ng-app="AccountModule">
     <div data-ng-controller="RegisterController" id="cover">
         <!--    Login Form-->
-        <form action="" method="post" class="RegisterLoginForm" style="display:none" id="loginForm">
+        <form action="" method="post" class="RegisterLoginForm" id="loginForm">
             <div class="formStyle">
                 <div class="titleTag">
                     <h1>Login</h1>
@@ -25,6 +25,7 @@
                     <span>Password:</span>
                     <input id="LoginPassword" type="password" name="LoginPassword">
                 </label>
+
                 <div id="LoginError"></div>
                 <input type="submit" value="Login" class="button-blue-small button-left" />
                 <span class="Tip">don't you have an account?</span>
@@ -53,14 +54,15 @@
                     <span>Confirm your password:</span>
                     <input id="PW2" type="password" name="CPassword">
                 </label>
+
                 <div id="RegisterError"></div>
                 <input type="submit" data-ng-click="addUser()" value="Register" name="RegisterSubmit" class="button-blue-small button-left" />
                 <span class="Tip">do you already have an account?</span>
                 <input type="submit" value="Login" class="button-blue-small button-right" id="LoginBT" />
-                <div id="ErrorMessage"></div>
+                <div style="margin-top: -75px;" id="ErrorMessage"></div>
             </div>
         </form>
-        <table style="width:800px">
+        <table id="userInfo">
             <tr>
                 <th>User ID</th>
                 <th>User Email</th>
@@ -74,9 +76,6 @@
                 </td>
                 <td>
                     <p>{{user.UserPassword}}</p>
-                </td>
-                <td>
-                    <p><a>Edit</a> | <a>Delete</a></p>
                 </td>
             </tr>
         </table>

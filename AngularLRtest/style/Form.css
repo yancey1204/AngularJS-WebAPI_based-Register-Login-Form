@@ -2,17 +2,17 @@
 #cover {
     width: 500px;
     margin: 0 auto;
+    
 }
 
 .RegisterLoginForm {
     z-index: 99;
-    width: 40%;
+    display:none;
     max-width: 500px;
     background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
     background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
     background: rgba(255, 255, 255,0.9);
     margin: auto;
-    position: fixed;
     height: 345px;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 14px;
@@ -56,21 +56,22 @@
 .Tip {
     font-size: 10px;
     position: absolute;
-    right: 20px;
-    bottom: 40px;
+    margin-left: 287px;
+    margin-top: -55px;
 }
 
 .button-left {
-    right: 138px;
+    margin-left: 210px;
+    margin-top: 50px;
 }
 
 .button-right {
-    right: 25px;
+    margin-left: 333px;
+    margin-top: -25px;
 }
 
 .button-blue-small {
     width: 100px !important;
-    position: absolute;
     bottom: 20px;
     background: #09C;
     color: #fff;
@@ -89,6 +90,14 @@
 
 input:focus {
     border: 1px solid #09C;
+}
+
+
+#userInfo {
+    width: 800px;
+    margin-left: -130px;
+    text-align: center;
+    margin-top: 40px;
 }
 /* End of welcome cover*/
 
