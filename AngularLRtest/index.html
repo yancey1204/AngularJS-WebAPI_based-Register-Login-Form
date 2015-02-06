@@ -37,7 +37,7 @@
 
 
         <!--    Register Form-->
-        <form class="RegisterLoginForm" id="registerForm" style="clear:both">
+        <form class="RegisterLoginForm" id="registerForm" style="clear:both ;display:none">
             <div class="formStyle">
                 <div class="titleTag">
                     <h1>Register</h1>
@@ -62,6 +62,7 @@
                 <div style="margin-top: -75px;" id="ErrorMessage"></div>
             </div>
         </form>
+        <input data-ng-click="logout()" type="submit" value="LogOut" class="button-blue-small" id="LogOutBT" />
         <table id="userInfo">
             <tr>
                 <th>User ID</th>

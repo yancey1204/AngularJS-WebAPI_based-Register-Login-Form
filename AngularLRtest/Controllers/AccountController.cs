@@ -21,10 +21,24 @@ namespace AngularLRtest.Controllers
 
         [Route("Login")]
         [HttpGet]
-        public string login()
+        public bool login()
+        {
+            bool logedin = false;
+            if (HttpContext.Current.Request.Cookies["userEmail"] != null) logedin = true;
+            return logedin;
+        }
+
+
+        [Route("LogOut")]
+        [HttpGet]
+        public string logout()
         {
             string roll = HttpContext.Current.Request.Cookies["userEmail"].Value;
-            return "Hello "+ roll + ". \n You've already logged in";
+            if (roll != null)
+            {
+                HttpContext.Current.Response.Cookies["userEmail"].Expires = DateTime.Now.AddDays(-1);
+            }
+            return "Good bye" + roll;
         }
 
         [Route("register")]

@@ -7,7 +7,6 @@
 
 .RegisterLoginForm {
     z-index: 99;
-    display:none;
     max-width: 500px;
     background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
     background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
@@ -25,7 +24,6 @@
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #999;
-    //border: inset 1px solid #333;
     -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
