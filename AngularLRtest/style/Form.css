@@ -1,0 +1,119 @@
+/* welcome Cover */
+#cover {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.RegisterLoginForm {
+    z-index: 99;
+    width: 40%;
+    max-width: 500px;
+    background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+    background: rgba(255, 255, 255,0.9);
+    margin: auto;
+    position: fixed;
+    height: 345px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 35px;
+    font-weight: bold;
+    color: #09C;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #999;
+    //border: inset 1px solid #333;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.formStyle {
+    margin-left: 5%;
+}
+
+.titleTag {
+    display: flex;
+}
+
+.closeHover {
+    display: none;
+}
+
+.RegisterLoginForm input {
+    width: 375px;
+    display: block;
+    border: 1px solid #999;
+    height: 25px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Tip {
+    font-size: 10px;
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+}
+
+.button-left {
+    right: 138px;
+}
+
+.button-right {
+    right: 25px;
+}
+
+.button-blue-small {
+    width: 100px !important;
+    position: absolute;
+    bottom: 20px;
+    background: #09C;
+    color: #fff;
+    font-family: Tahoma, Geneva, sans-serif;
+    height: 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: 1px solid #999;
+}
+
+    .button-blue-small:hover {
+        color: #09C;
+        background: #fff;
+    }
+
+input:focus {
+    border: 1px solid #09C;
+}
+/* End of welcome cover*/
+
+/* Welcome Menu */
+.welcomeMenu {
+    position: fixed;
+    right: 10px;
+    top: 20px;
+    width: 145px;
+    background: rgba(0,0,0,0.1);
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#user:hover {
+    cursor: pointer;
+    color: #60F;
+}
+
+#showLoginForm {
+    font-weight: bolder;
+    cursor: pointer;
+}
+/* End of Welcome menu */
+
+
