@@ -24,7 +24,8 @@ namespace AngularLRtest.Controllers
         public bool login()
         {
             bool logedin = false;
-            if (HttpContext.Current.Request.Cookies["userEmail"] != null) logedin = true;
+            if (HttpContext.Current.Request.Cookies["userEmail"] != null) {
+                logedin = true; }
             return logedin;
         }
 
